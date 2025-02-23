@@ -7,7 +7,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
 	cors: {
-		origin: ["https://chatemate1.netlify.app"],
+		origin: ["*"],
 		methods: ["GET", "POST"],
 	},
 });
